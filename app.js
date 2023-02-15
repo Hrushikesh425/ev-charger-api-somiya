@@ -17,8 +17,8 @@ app.get('/api/:csn', (req, res) => {
     })
     .then(response => {
         console.log(`response from other API: ${JSON.stringify(response.data)}`);
-        const data =  response.json();
-        const particularData = data.fulL_NAME.membeR_TYPE;
+        // const data =  response.json();
+        // const particularData = data.fulL_NAME.membeR_TYPE;
         res.json(response.data);
     })
     .catch(error => {

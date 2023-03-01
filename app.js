@@ -37,7 +37,8 @@ app.get('/api/:csn', (req, res) => {
         data.push({
             instname: item.insT_NAME,
             fullname: item.fulL_NAME,
-            id: item.membeR_ID
+            id: item.membeR_ID,
+            member_type: item.membeR_TYPE
         })
     })
 
